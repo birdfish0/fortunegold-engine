@@ -3,6 +3,7 @@
 *.ini
 *.mch
 build/*
+buildi/*
 base/*
 base_dsrom/*
 narc/*

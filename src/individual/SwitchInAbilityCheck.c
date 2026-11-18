@@ -137,11 +137,17 @@ int UNUSED SwitchInAbilityCheck(void *bw, struct BattleStruct *sp)
                     ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                     break;
                 case WEATHER_SYS_HIGH_SUN:
+                case 14:
                     scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_SUN;
                     ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                     break;
                 case WEATHER_SYS_TRICK_ROOM:
+                case 15:
                     scriptnum = BATTLE_SUBSCRIPT_OVERWORLD_TRICK_ROOM;
+                    ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
+                    break;
+                case 16: // Gravity
+                    scriptnum = BATTLE_SUBSCRIPT_GRAVITY_START;
                     ret = SWITCH_IN_CHECK_MOVE_SCRIPT;
                     break;
                 }
